@@ -1,4 +1,22 @@
 from pathlib import Path
+def get_feather_path() -> Path:
+    """
+    현재 파일 기준으로 상위 디렉토리를 탐색하여 feather 폴더를 찾고,
+    해당 폴더의 경로를 반환합니다.
+    
+    Returns: Path
+        발견한 feather 디렉토리의 경로
+    """
+    return get_target_path("feather", caller_path=__file__)
+def get_credentials_path() -> Path:
+    """
+    현재 파일 기준으로 상위 디렉토리를 탐색하여 credentials 폴더를 찾고,
+    해당 폴더의 경로를 반환합니다.
+    
+    Returns: Path
+        발견한 credentials 디렉토리의 경로
+    """
+    return get_target_path("credentials", caller_path=__file__)    
 
 def get_target_path(target_dir_name: str, caller_path=None) -> Path:
     """

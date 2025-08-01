@@ -1,1 +1,1 @@
-from .path import get_target_path
+from .path import get_target_path, get_feather_path, get_credentials_path
