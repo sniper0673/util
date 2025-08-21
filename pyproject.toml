@@ -1,6 +1,6 @@
 [project]
 name = "apsniper0673_util"
-version = "0.1.5"
+version = "0.1.6"
 description = "My util for APSniper0673"
 authors = [
   { name = "apsniper0673" }
